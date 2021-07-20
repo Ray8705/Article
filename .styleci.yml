@@ -1,5 +1,5 @@
 php:
-  preset: laravel
+  preset: article
   disabled:
     - no_unused_imports
   finder:
