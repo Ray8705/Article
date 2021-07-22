@@ -23,4 +23,9 @@ class CommentRepository
     {
         return $this->comment->where('id', $id)->with(['Article:id, title'])->first();
     }
+
+    public function getCommentForDetail($id)
+    {
+        return $this->comment->where('article_id', $id)->get();
+    }
 }
